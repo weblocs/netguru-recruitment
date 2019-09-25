@@ -1,12 +1,17 @@
 .about {
-    margin-top: 90px;
-    margin-bottom: 203px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    @include mq(md){
+        margin-top: 90px;
+        margin-bottom: 203px;        
+    }
     .title-wrapper {
         display: flex;
         flex-direction: column;
-        margin-bottom: 150px;
+        margin-bottom: 50px;
         @include mq(md){
             flex-direction: row;
+            margin-bottom: 150px;
         }
         .column {
             width: 100%;       
@@ -16,35 +21,47 @@
             margin-top: 48px;
         }
         p {
-            margin-top: 62px;
+            margin-top: 30px;
             line-height: 28px;
+            @include mq(md){
+                margin-top: 62px;       
+            }
         }
         .number {
             position: absolute;
-            font-size: 100px;
+            font-size: 80px;
             line-height: 124px;
             font-weight: 700;
-            margin-left: -72px;
+            margin-left: -14px;
             z-index: -1;
             color: $gray;
+            @include mq(md){
+                font-size: 100px;
+                margin-left: -72px;
+            }
         }
     }
     
     .content-wrapper {
         display: flex;
         flex-direction: column;
+        
         @include mq(md){
             flex-direction: row;
         }
-        .content {
+        .content-box {
+            margin-right: 124px;
             max-width: 625px;
             width: 100%;
-            margin-right: 124px;
-            margin-bottom: 44px;
-            h3 {
-                margin-bottom: 30px;
+            .content {
+                width: 100%;
+                margin-bottom: 44px;
+                h3 {
+                    margin-bottom: 30px;
+                }
             }
         }
+        
         .navigation-wrapper {
             max-width: 304px;
             width: 100%;
