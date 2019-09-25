@@ -1,14 +1,23 @@
 .intro {
     display: flex;
+    flex-direction: column;
+    @include mq(md){
+        flex-direction: row;
+    }
     .photo {
-        width: 50%;
-        min-height: 656px;
+        width: 100%;        
         background-size: cover;
         background-position: center;
+        min-height: 256px;
+        @include mq(md){
+            min-height: 656px;
+        }
     }
     .content {
-        width: 50%;
-        max-width: 422px;
-        margin: 100px 113px;
+        width: 100%;
+        .wrapper {
+            max-width: 422px;
+            margin: 100px 113px;
+        }
     }
 }
