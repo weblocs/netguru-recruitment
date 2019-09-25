@@ -80,8 +80,12 @@
                     font-size: 14px;
                     line-height: 24px;
                     margin-bottom: 20px;
+                    color: $black;
                     :last-child {
                         margin-bottom: 0;
+                    }
+                    &.current {
+                        color: $green;
                     }
                 }
             }
