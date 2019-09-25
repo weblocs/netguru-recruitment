@@ -18,4 +18,4 @@
 
 ## Project build on Sass Starter 
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/sshikhrakar/Sass-Starter/blob/master/LICENSE) file for details.
+This project  build on top of Sass Starter https://github.com/sshikhrakar/Sass-Starter/, which is licensed under the MIT License - see the [LICENSE.md](https://github.com/sshikhrakar/Sass-Starter/blob/master/LICENSE) file for details.
