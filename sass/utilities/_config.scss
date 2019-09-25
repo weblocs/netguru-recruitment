@@ -27,6 +27,11 @@ $typefaces: (
    weight: 400,
    style: normal,
  ),
+ 'AvertaStd-Bold': (
+   family: 'AvertaStd',
+   weight: 700,
+   style: normal,
+ ),
 );
 
 $font-family-sans-fallback: 'Arial', sans-serif;
@@ -39,11 +44,11 @@ $font-family--secondary : $font-family-sans;
 //Colors
 $white: #fff;
 $black: #000;
-$gray: #c7c7c7;
+$gray: #FAFAFA;
 $red: #D24D57;
 $blue: #3A539B;
 $yellow: #F7CA18;
-$green: #36D7B7;
+$green: #00D563;
 
 //Message Colors
 $error: lighten($red,5%) !default;
@@ -85,13 +90,22 @@ $small-font-size: $default-font-size - 2px;
 $lg-font-size: $default-font-size + 2px;
 
 //Heading font size vairables
-$heading-line-height: 28px !default;
-$head1-font-size: 26px !default;
+$head1-font-size: 30px !default;
+$head1-line-height: 44px !default;
+
+$head4-font-size: 16px !default;
+$head4-line-height: 24px !default;
+
+$paragraph-font-size: 14px !default;
+$paragraph-line-height: 24px !default;
+
 $head2-font-size: $head1-font-size - 4px !default;
 $head3-font-size: $head1-font-size - 8px !default;
 
+
+
 //Color Usage
-$primary-color: $white;
+$primary-color: $green;
 $secondary-color: $black;
 $accent-color: $gray;
 $shadow-color: rgba($black, .2);
