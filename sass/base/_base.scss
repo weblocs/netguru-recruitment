@@ -89,6 +89,10 @@ button {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 img{
   max-width: 100%;
