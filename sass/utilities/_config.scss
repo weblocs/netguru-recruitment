@@ -93,11 +93,17 @@ $lg-font-size: $default-font-size + 2px;
 $head1-font-size: 30px !default;
 $head1-line-height: 44px !default;
 
+$head2-font-size: 36px !default;
+$head2-line-height: 52px !default;
+
+$head3-font-size: 20px !default;
+$head3-line-height: 30px !default;
+
 $head4-font-size: 16px !default;
 $head4-line-height: 24px !default;
 
-$paragraph-font-size: 14px !default;
-$paragraph-line-height: 24px !default;
+$paragraph-font-size: 16px !default;
+$paragraph-line-height: 30px !default;
 
 $head2-font-size: $head1-font-size - 4px !default;
 $head3-font-size: $head1-font-size - 8px !default;
@@ -111,7 +117,7 @@ $accent-color: $gray;
 $shadow-color: rgba($black, .2);
 $border-color: $gray;
 $color-text: $black;
-$color-link: $blue;
+$color-link: $green;
 
 //Path to Assets
 $path--rel: "../images";
