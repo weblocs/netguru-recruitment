@@ -2,11 +2,13 @@
     display: flex;
     .photo {
         width: 50%;
-        height: 656px;
+        min-height: 656px;
         background-size: cover;
         background-position: center;
     }
     .content {
         width: 50%;
+        max-width: 422px;
+        margin: 100px 113px;
     }
 }
