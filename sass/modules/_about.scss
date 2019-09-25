@@ -50,6 +50,10 @@
             flex-direction: row;
         }
         .content-box {
+            order: 1;
+            @include mq(md){
+                order: 0;
+            }
             margin-right: 124px;
             max-width: 625px;
             width: 100%;
@@ -63,29 +67,52 @@
         }
         
         .navigation-wrapper {
-            max-width: 304px;
+            order: 0;
+            position: sticky;
+            top: 0;
+            overflow-y: scroll;
+            @include mq(md){
+                order: 1;
+                position: relative;
+                max-width: 304px;
+                overflow-y: initial;
+            }
             width: 100%;
             .navigation {
                 position: sticky;
                 top: 120px;
                 right: 0;
-                padding: 50.5px 45px 71px;
-                width: 100%;
-                border: 1px solid #F0F0F0;
+                padding: 10px 0px;
+                background: $white;
+                width: max-content;
+                @include mq(md){
+                    padding: 50.5px 45px 71px;
+                    border: 1px solid #F0F0F0;
+                    width: 100%;
+                }
                 h3 {
                     margin-bottom: 40.5px;
+                    display: none;
+                    @include mq(md){
+                        display: block;
+                    }
                 }
                 a {
-                    display: block;
+                    display: inline-flex;
                     font-size: 14px;
                     line-height: 24px;
-                    margin-bottom: 20px;
                     color: $black;
+                    padding: 0 15px 0 0;
                     :last-child {
                         margin-bottom: 0;
                     }
                     &.current {
                         color: $green;
+                    }
+                    @include mq(md){
+                        display: block;
+                        padding: 0;
+                        margin-bottom: 20px;
                     }
                 }
             }
